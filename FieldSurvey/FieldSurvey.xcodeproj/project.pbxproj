@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1051B7F1F216BAD00EF521A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051B7E1F216BAD00EF521A /* AppDelegate.swift */; };
-		C1051B811F216BAD00EF521A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051B801F216BAD00EF521A /* ViewController.swift */; };
-		C1051B841F216BAD00EF521A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1051B821F216BAD00EF521A /* Main.storyboard */; };
 		C1051B871F216BAD00EF521A /* FieldSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1051B851F216BAD00EF521A /* FieldSurvey.xcdatamodeld */; };
 		C1051B891F216BAD00EF521A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1051B881F216BAD00EF521A /* Assets.xcassets */; };
 		C1051B8C1F216BAD00EF521A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1051B8A1F216BAD00EF521A /* LaunchScreen.storyboard */; };
 		C1051B971F216BAD00EF521A /* FieldSurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051B961F216BAD00EF521A /* FieldSurveyTests.swift */; };
 		C1051BA21F216BAD00EF521A /* FieldSurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BA11F216BAD00EF521A /* FieldSurveyUITests.swift */; };
+		C1051BB01F216C2800EF521A /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BAF1F216C2800EF521A /* Species.swift */; };
+		C1051BB71F2171A000EF521A /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = C1051BB61F2171A000EF521A /* field_observations.json */; };
+		C1051BB91F2171B900EF521A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BB81F2171B900EF521A /* AppDelegate.swift */; };
+		C1051BBB1F2172DE00EF521A /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BBA1F2172DE00EF521A /* Classification.swift */; };
+		C1051BBD1F21777700EF521A /* FieldSurveyJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BBC1F21777700EF521A /* FieldSurveyJSONParser.swift */; };
+		C1051BBF1F217FE100EF521A /* FieldSurveyJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BBE1F217FE100EF521A /* FieldSurveyJSONLoader.swift */; };
+		C1051BC11F21828600EF521A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1051BC01F21828600EF521A /* Main.storyboard */; };
+		C1051BC31F21842E00EF521A /* FieldSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BC21F21842E00EF521A /* FieldSurveyViewController.swift */; };
+		C1051BC51F21846D00EF521A /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BC41F21846D00EF521A /* DetailedViewController.swift */; };
+		C1051BC91F218DCC00EF521A /* FieldSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1051BC81F218DCC00EF521A /* FieldSurveyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +43,6 @@
 
 /* Begin PBXFileReference section */
 		C1051B7B1F216BAD00EF521A /* FieldSurvey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldSurvey.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1051B7E1F216BAD00EF521A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1051B801F216BAD00EF521A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C1051B831F216BAD00EF521A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1051B861F216BAD00EF521A /* FieldSurvey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FieldSurvey.xcdatamodel; sourceTree = "<group>"; };
 		C1051B881F216BAD00EF521A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1051B8B1F216BAD00EF521A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,16 @@
 		C1051B9D1F216BAD00EF521A /* FieldSurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldSurveyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1051BA11F216BAD00EF521A /* FieldSurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyUITests.swift; sourceTree = "<group>"; };
 		C1051BA31F216BAD00EF521A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1051BAF1F216C2800EF521A /* Species.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Species.swift; path = ../Species.swift; sourceTree = "<group>"; };
+		C1051BB61F2171A000EF521A /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		C1051BB81F2171B900EF521A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1051BBA1F2172DE00EF521A /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		C1051BBC1F21777700EF521A /* FieldSurveyJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONParser.swift; sourceTree = "<group>"; };
+		C1051BBE1F217FE100EF521A /* FieldSurveyJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONLoader.swift; sourceTree = "<group>"; };
+		C1051BC01F21828600EF521A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C1051BC21F21842E00EF521A /* FieldSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyViewController.swift; sourceTree = "<group>"; };
+		C1051BC41F21846D00EF521A /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		C1051BC81F218DCC00EF521A /* FieldSurveyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,12 @@
 		C1051B7D1F216BAD00EF521A /* FieldSurvey */ = {
 			isa = PBXGroup;
 			children = (
-				C1051B7E1F216BAD00EF521A /* AppDelegate.swift */,
-				C1051B801F216BAD00EF521A /* ViewController.swift */,
-				C1051B821F216BAD00EF521A /* Main.storyboard */,
+				C1051BB31F21702F00EF521A /* Model */,
+				C1051BC21F21842E00EF521A /* FieldSurveyViewController.swift */,
+				C1051BC41F21846D00EF521A /* DetailedViewController.swift */,
+				C1051BC81F218DCC00EF521A /* FieldSurveyTableViewCell.swift */,
+				C1051BB81F2171B900EF521A /* AppDelegate.swift */,
+				C1051BC01F21828600EF521A /* Main.storyboard */,
 				C1051B881F216BAD00EF521A /* Assets.xcassets */,
 				C1051B8A1F216BAD00EF521A /* LaunchScreen.storyboard */,
 				C1051B8D1F216BAD00EF521A /* Info.plist */,
@@ -126,6 +143,18 @@
 				C1051BA31F216BAD00EF521A /* Info.plist */,
 			);
 			path = FieldSurveyUITests;
+			sourceTree = "<group>";
+		};
+		C1051BB31F21702F00EF521A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1051BB61F2171A000EF521A /* field_observations.json */,
+				C1051BAF1F216C2800EF521A /* Species.swift */,
+				C1051BBA1F2172DE00EF521A /* Classification.swift */,
+				C1051BBC1F21777700EF521A /* FieldSurveyJSONParser.swift */,
+				C1051BBE1F217FE100EF521A /* FieldSurveyJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1051BB71F2171A000EF521A /* field_observations.json in Resources */,
 				C1051B8C1F216BAD00EF521A /* LaunchScreen.storyboard in Resources */,
 				C1051B891F216BAD00EF521A /* Assets.xcassets in Resources */,
-				C1051B841F216BAD00EF521A /* Main.storyboard in Resources */,
+				C1051BC11F21828600EF521A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1051B811F216BAD00EF521A /* ViewController.swift in Sources */,
-				C1051B7F1F216BAD00EF521A /* AppDelegate.swift in Sources */,
+				C1051BBF1F217FE100EF521A /* FieldSurveyJSONLoader.swift in Sources */,
+				C1051BB91F2171B900EF521A /* AppDelegate.swift in Sources */,
+				C1051BC51F21846D00EF521A /* DetailedViewController.swift in Sources */,
+				C1051BC91F218DCC00EF521A /* FieldSurveyTableViewCell.swift in Sources */,
+				C1051BB01F216C2800EF521A /* Species.swift in Sources */,
+				C1051BC31F21842E00EF521A /* FieldSurveyViewController.swift in Sources */,
 				C1051B871F216BAD00EF521A /* FieldSurvey.xcdatamodeld in Sources */,
+				C1051BBB1F2172DE00EF521A /* Classification.swift in Sources */,
+				C1051BBD1F21777700EF521A /* FieldSurveyJSONParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +339,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C1051B821F216BAD00EF521A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C1051B831F216BAD00EF521A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C1051B8A1F216BAD00EF521A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
